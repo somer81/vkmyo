@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+var oranlar= new Array(6,9,8,4,5,7,8,10); 
+var toplam = 0; 
+var yorumlar = 0; 
+for (i=0; i < oranlar.length; i++) 
+	{ 
+		if (oranlar[i] < 5) 
+		continue; 
+		document.writeln("Toplanan sayı = " + oranlar[i] + "<br/>");
+		toplam+= oranlar[i]; 
+		yorumlar++; 
+		document.writeln("Yorum Sayısı = " + yorumlar  + "<br/>");
+	} 
+ var ort= toplam / yorumlar;
+
+  
+  console.log(toplam);
+  console.log(yorumlar);
+  console.log(ort);
+   
+ document.write("Reytinglerden 5 in üzerinde olanların toplamı : " + toplam + "<br/> Toplam yorum sayısı : " + yorumlar + "<br/> Reyting ortlaması : " + ort );
+
+
+</script>
+
+
+</body>
+</html>

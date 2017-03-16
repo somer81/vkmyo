@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <meta charset="utf8">
+	<title></title>
+
+	<script> 
+
+	function renkSor(){
+
+		var renk = prompt("Renk bilgisi giriniz"); 
+		
+		switch(renk){
+
+			case  "mavi":
+			document.body.style.background = "#0000FF";
+			break;
+			case  "yeşil":
+			document.body.style.background = "#00FF00";
+			break;
+			case  "kırmızı":
+			document.body.style.background = "#FF0000";
+			break;
+			case  "siyah":
+			document.body.style.background = "#000000";
+			break;
+			default : 
+			document.body.style.background = "#FFFFFF";
+			break;
+
+		}
+
+	}
+
+	</script>
+
+
+</head>
+<body onload="renkSor()">
+
+
+
+
+</body>
+</html>
